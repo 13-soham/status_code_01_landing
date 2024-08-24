@@ -1,0 +1,483 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&display=swap');
+body{
+    font-family: poppins;
+    /* background-color: #222831; */
+    background-image: url(https://plus.unsplash.com/premium_photo-1714329905829-41d19b4ad2f9?q=80&w=2007&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.652); 
+    z-index: -1; 
+}
+body::-webkit-scrollbar {
+    width: 0.4em;
+}
+   
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+   
+body::-webkit-scrollbar-thumb {
+    background-color: #222732;
+    outline: 1px solid #222732;
+}
+.navbar{
+    /* background-color: red; */
+    padding: 3vw 27vw;
+}
+.navbar>a{
+    font-size: 5vw;
+    font-family: poppins;
+    font-weight: 800;
+    padding-left: 3vw;
+    /* background-color: aqua; */
+}
+.btn-link {
+    color: rgb(21, 0, 255);
+    background-color: black; 
+    border: 0.5px solid royalblue;
+    padding: 5px 10px;
+}
+
+.btn-link:hover {
+    color: white; 
+    background-color: rgba(15, 195, 255, 0.242);
+}
+
+.screen {
+    height: calc(100vh-50px);
+    width: 100vw;
+    position: relative;
+}
+
+.nft-sec {
+    background: #222831;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.dungeon {
+    /* background-color: #e2e1e1; */
+    /* width: 80vw; */
+    height: 60%;
+    /* margin-top: 80px; */
+    position: relative;
+    border-radius: 40px;
+    background-color: #343a40;
+    box-shadow: inset -20px -20px 30px rgba(0, 0, 0, 0.25), inset 20px 20px 30px rgba(0, 0, 0, 0.25);
+
+}
+
+.btncont {
+    position: relative;
+    display: block;
+    margin-bottom: 20px !important;
+    padding-top: 2vw;
+    padding-left: 8vw;
+    /* background-color: red; */
+}
+.btncont .field {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btncont .field:focus, .btncont .field:hover {
+    border-color: royalblue;
+    box-shadow: 0 0 5px rgb(55, 3, 213);
+}
+
+.btncont .minter {
+    margin-bottom: 15px;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btncont .minter:hover {
+    background-color: #ffdb9c6a;
+    color: black;
+}
+
+.btncont .minter1 {
+    color: royalblue;
+    background-color: black;
+    border: 2px solid rgb(6, 27, 89);
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btncont .minter1:hover {
+    background-color: skyblue;
+    color: black;
+}
+
+.btncont1 {
+    position: relative;
+    display: block;
+    margin-bottom: 20px !important;
+    justify-content: space-between !important;
+    /* background-color: red; */
+    padding: 2vw 9vw;
+}
+.btncont1 h2 {
+    margin-bottom: 1.2vw;
+    color: white;
+    font-size: 2.5vw;
+    font-family: poppins;
+    font-weight: 400;
+}
+
+.btncont1 label {
+    display: block;
+    color: white;
+    font-size: 1vw;
+    font-weight: 300;
+    /* background-color: rebeccapurple; */
+}
+
+.btncont1 input[type="text"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px;
+    font-size: 1.6vw;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btncont1 input[type="text"]:focus, 
+.btncont1 input[type="text"]:hover {
+    border-color: rgb(0, 60, 255);
+    box-shadow: 0 0 5px royalblue;
+}
+
+.btncont1 .btn {
+    color: royalblue;
+    background-color: black;
+    border: 2px solid rgb(0, 33, 131);
+    border-radius: 10px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btncont1 .btn:hover {
+    background-color: skyblue;
+    color: black;
+}
+
+/* .field {
+    height: 44px;
+  width: 40%;
+  padding: 0;
+  line-height: 30px;
+  font-size: 20px;
+  padding: 0;
+  margin: 3px;
+  margin-left: 20px;
+  border: none;
+}
+
+.field:focus {
+    outline: none;
+}
+
+.minter {
+    position: absolute; 
+  height: 50px;
+  line-height: 50px;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  background: orange;
+  color: white;
+  border: none;
+  width: 20%;
+  font-weight: bold;
+}
+
+.minter1 {
+    position: absolute; 
+  height: 50px;
+  line-height: 50px;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  background: orange;
+  color: white;
+  border: none;
+  width: 20%;
+  font-weight: bold;
+}
+
+.minter:hover {
+    color: black;
+  cursor: pointer;
+} */
+
+
+.mint-btn {
+    vertical-align: center !important;
+    align-content: center !important;
+    background-color: #000000;
+    height: 50px;
+    width: 200px;
+    border-radius: 8px;
+    margin: 16px 0;;
+
+}
+
+.mint-btn:hover{
+    opacity: 0.4;
+}
+
+.text {
+    /* margin-top: 50% !important; */
+    display: flex !important;
+    vertical-align: center;
+    margin: 20px;
+    margin-left: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.trophy-section-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.trophy-cabinet {
+    padding: 10px;
+    margin-top: 20px;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-evenly;
+    width: 80%;;
+}
+.trophy-info{
+    font-size: 24px;
+}
+.text-header, .text-header-game {
+    color:#EEEEEE;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.text-header-game {
+    padding: 20px;
+}
+
+.text-header1 {
+    font-size: 14px;
+    color:#FFD369;
+}
+
+
+.select-story {
+    padding: 15px;
+
+}
+
+.name-artist {
+    color: #8A4FFF;
+}
+
+.gift {   
+padding: 10px 50px;
+    margin: 5px;
+    height: fit-content;
+    font-size: 8px;
+    color: white;
+    background: #343A40;
+box-shadow: 12px 12px 20px rgba(0, 0, 0, 0.15), -12px -11px 15px rgba(49, 40, 40, 0.09);
+border-radius: 24px;
+    
+}
+.gift:hover {
+    box-shadow:
+    inset 0 0 25px #fff,      /* inner white */
+    inset 10px 0 40px #f0f,   /* inner left magenta short */
+    inset -10px 0 40px #0ff,  /* inner right cyan short */
+    inset 10px 0 150px #f0f,  /* inner left magenta broad */
+    inset -10px 0 150px #0ff, /* inner right cyan broad */
+    0 0 25px #fff,            /* outer white */
+    -5px 0 40px #f0f,        /* outer left magenta */
+    5px 0 40px #0ff;         /* outer right cyan */
+}
+
+/* General styling for the giftbox class */
+.giftbox{
+    padding-left: 5vw;
+    /* background-color: red; */
+}
+.giftbox .field {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.giftbox .field:focus, .giftbox .field:hover {
+    border-color: royalblue;
+    box-shadow: 0 0 5px royalblue;
+}
+
+.giftbox .minter {
+    margin-bottom: 15px;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.giftbox .minter:hover {
+    background-color: royalblue;
+    color: white;
+}
+
+.giftbox .minter1 {
+    color: royalblue;
+    background-color: black;
+    border: 2px solid royalblue;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.giftbox .minter1:hover {
+    background-color: skyblue;
+    color: black;
+}
+
+.giftbox h3 {
+    margin-bottom: 20px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.giftbox label {
+    display: block;
+    color: white;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.giftbox input[type="text"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.giftbox input[type="text"]:focus, 
+.giftbox input[type="text"]:hover {
+    border-color: royalblue;
+    box-shadow: 0 0 5px royalblue;
+}
+
+.giftbox .btn {
+    color: royalblue;
+    background-color: black;
+    border: 2px solid royalblue;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.giftbox .btn:hover {
+    background-color: skyblue;
+    color: black;
+}
+
+/* box-shadow:
+    0 0 60px 30px #fff,  
+    0 0 100px 60px #f0f, 
+    0 0 140px 90px #0ff;  */
+
+    .trophy-title {
+        padding: 20px;
+        font-weight: 900;
+        font-size: 48px;
+    
+        background-image: linear-gradient(45deg, rgba(22, 188, 243, 1), rgba(22, 188, 243, 0.42));
+        background-size: 100%;
+        
+        background-clip: text; /* Standard property */
+        -webkit-background-clip: text; /* For WebKit browsers (Chrome, Safari) */
+        -moz-background-clip: text; /* For Mozilla browsers (Firefox) */
+        
+        color: transparent; /* Standard for compatibility */
+        -webkit-text-fill-color: transparent; /* For WebKit browsers */
+        -moz-text-fill-color: transparent; /* For Mozilla browsers */
+    }
+    
+.values {
+    color: gold;
+}
+
+.chainlink {
+    height: 20px;
+    width: 20px;
+}
+
+.chainlink1 {
+    height: 60px;
+    width: 60px;
+}
+
+.white {
+    color: white;
+}
+
+.hovero {
+    text-decoration: none;
+}
+.hovero:hover {
+    color: white;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trophy Cabinet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="screen">
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <a class="navbar-brand col-sm-3 col-md-2 mr-0 text-header" href="/" target="_blank" rel="noopener noreferrer">
+                Trophy Cabinet
+            </a>
+            <ul class='navbar-nav px-3'>
+                <li class="nav-item text-nowrap d-none d-sm-none d-sm-block">
+                    <button class="btn btn-link btn-sm mint-btn dispToken">LogIn</button>
+                    <small class='text-white'><span id='account' class='text-header1'>User Address</span></small>
+                    <button class="btn btn-link btn-sm mint-btn dispToken">Logout</button>
+                    <button class="btn btn-link btn-sm mint-btn dispToken">Setup User</button>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <div class='nft-sec container-fluid mt-5'>
+            <div class='row'>
+                <main role='main' class='col-lg-12 d-flex text-center'>
+                    <div class="trophy-section-header">
+                        <h5 class="trophy-title">Your Trophy Cabinet</h5>
+                        <h5 class="text-header1 white">Powered by <img src="https://raw.githubusercontent.com/ThisIsCodeXpert/Flow-NFT-DApp-Tutorial-Series/main/cats/cat5.svg" class="chainlink" /> <span class="hovero">Flow Blockchain</span></h5>
+                        <button type="submit" class="btn btn-link btn-block btn-sm mint-btn dispToken">Get NFT</button>
+                    </div>
+                </main>
+                <div class='gift'>
+                    <h3>Trophies collected after successful victories</h3>
+                    <div class="giftBox">
+                        <img src="https://raw.githubusercontent.com/lopeselio/img-dumps/main/trophy-18.png" style="height: 100px; width: 100px; align-self: center; justify-content: center;" />
+                    </div>
+                    <div class="gift">
+                        <h1>Trophy ID</h1>
+                        <img src="https://raw.githubusercontent.com/lopeselio/img-dumps/main/trophy-18.png" style="height: 100px; width: 100px; align-self: center; justify-content: center;" />
+                    </div>
+                </div>
+
+                <div class='giftbox nft-sec container-fluid mt-5 btncont giftbox'>
+                    <input type="text" class='field' placeholder="Name of NFT" />
+                    <input type="file" class='minter' />
+                    <button class='minter1 btn btn-link btn-sm mint-btn dispToken'>Mint</button>
+                </div>
+
+                <div class='giftbox nft-sec container-fluid mt-5 btncont1 giftbox'>
+                    <h2 style="color: white;">Search NFTs using Player address...</h2>
+                    <label style="color: white;" htmlFor="fname">Search User's Address</label>
+                    <input type="text" style="margin-right: 20px;" />
+                    <button class='btn btn-link btn-sm mint-btn dispToken'>Search</button>
+                </div>
+
+                <div class='giftbox'>
+                    <h3 style="color: white;">List/Unlist collectibles for/off purchase</h3>
+                    <label style="color: white;" htmlFor="fname">Collectible ID:</label>
+                    <input type="text" style="margin-right: 30px;" />
+                    <label style="color: white;" htmlFor="fname">Collectible Price:</label>
+                    <input type="text" style="margin-right: 30px;" />
+                    <button class='btn btn-link btn-block btn-sm mint-btn dispToken'>List NFT for Sale</button>
+                    <button class='btn btn-link btn-block btn-sm mint-btn dispToken'>Unlist an NFT from Sale</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

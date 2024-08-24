@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(135deg, #0a0a3c, #000);
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 55% 45%;
+    grid-template-rows: 60% 40%;
+}
+
+#left {
+    grid-row: 1/3;
+    background-image: url(https://images.unsplash.com/photo-1609372332255-611485350f25?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: top;
+    filter: brightness(0.7);
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+#left:hover {
+    filter: brightness(1);
+}
+
+#right_up {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+}
+
+#right_up h1 {
+    color: #fff;
+    font-size: 3vw;
+    text-transform: uppercase;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+#right_up p {
+    color: #fff;
+    font-size: 0.8vw;
+    width: 60%;
+    animation: slideIn 1.5s ease-in-out;
+}
+
+#right_down {
+    grid-column: 2/3;
+    display: flex;
+    align-items: first baseline;
+    justify-content: center;
+    padding-top: 4vw;
+}
+
+#right_down button {
+    height: 3vw;
+    width: 13vw;
+    border-radius: 20px;
+    border: 2px solid royalblue;
+    background-color: transparent;
+    color: royalblue;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: all ease 0.3s;
+}
+
+#right_down button:hover {
+    background-color: skyblue;
+    color: #fff;
+    border-color: skyblue;
+    scale: 1.1;
+}
+
+#right_down button h3 {
+    margin: 0;
+    font-size: 1.2vw;
+}
